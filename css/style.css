@@ -1,0 +1,226 @@
+:root {
+    --dark_blue: #1E202B;
+    --light-blue: #009AD8;
+    --blueGray: #323544;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--dark_blue);
+}
+
+.head-section {
+    background-color: var(--dark_blue);
+}
+
+.navbar {
+    padding-block: 38px;
+}
+
+.navbar-brand i {
+    color: #14BBDF;
+    font-size: 46px;
+}
+
+.navbar-brand div h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar-brand div p {
+    font-weight: 300;
+    font-size: 11px;
+    color: rgb(191, 193, 200);
+}
+
+
+
+
+ul.navbar-nav li {
+    margin-left: 12px;
+    width: fit-content;
+    /* text-align: center; */
+    margin-top: 9px;
+    margin-inline: auto;
+}
+
+ul.navbar-nav li a {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 24px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 24px !important;
+    border: 2px solid var(--light-blue);
+    border-radius: 30px;
+    color: var(--light-blue) !important;
+}
+
+ul.navbar-nav li a:hover {
+    color: var(--light-blue) !important;
+    border-color: var(--light-blue);
+}
+
+.navbar-toggler {
+    background-color: #009AD8;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+
+}
+
+.main-section {
+    background-color: var(--dark_blue);
+
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    padding-block: 70px;
+    min-height: 350px;
+}
+
+form .searchInput {
+    background-color: var(--dark_blue);
+    border: none;
+    padding: 20px 50px 20px 20px;
+}
+
+.form-control:focus {
+    background-color: var(--dark_blue);
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 100%;
+}
+
+form .searchInput::placeholder {
+    color: gray;
+    font-size: 14px;
+}
+
+form.find-location :last-child {
+    padding: 15px 39px;
+    background-color: var(--light-blue);
+    top: 5px;
+    right: 4px;
+}
+
+div.card-body .degree {
+    font-size: 89px;
+    font-weight: 700;
+}
+
+div.card-body .degree sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+
+div.card {
+    background-color: var(--blueGray);
+}
+
+.card .card-header {
+    background-color: #2D303D;
+
+}
+
+.card .card-header div,
+.card .card-body .country,
+.card .card-body span,
+.card .card-body small,
+.forecast .card-header,
+p.colophon {
+    color: #BFC1C8;
+}
+
+.forecast .card-body {
+    padding: 50px 20px 10px;
+}
+
+.forecast .card-body .custom {
+    padding-bottom: 53px;
+    margin-top: 20px;
+}
+
+.forecast-container .middle>div {
+    background-color: #262936;
+}
+
+.forecast-container1 {
+    top: -128px;
+}
+
+
+:not(.btn-check)+.btn:active {
+    border: none;
+    --bs-btn-active-bg: var(--light-blue);
+}
+
+footer {
+    background-color: #262936;
+}
+
+form .email-supscription {
+    background-color: var(--dark_blue);
+    border: none;
+    padding: 15px 50px 15px 20px;
+}
+
+.form-control:focus {
+    background-color: var(--dark_blue);
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 100%;
+}
+
+form .email-supscription::placeholder {
+    color: gray;
+    font-size: 14px;
+}
+
+form.supscription :last-child {
+    padding: 11px 10px;
+    background-color: var(--light-blue);
+    top: 4px;
+    right: 4px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 1.7;
+    transition: 0.3s ease;
+    font-size: 1.4285714286em;
+}
+
+.social-links a:hover {
+    background-color: #009ad8;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+    ul.navbar-nav {
+        border-top: 2px solid white;
+        margin-top: 10px;
+    }
+}

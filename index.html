@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- css links --------------------------------- -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <div class="head-section">
+        <nav id="navbar-example" class="navbar navbar-expand-lg w-75 mx-auto">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                    <i class="fa-solid fa-cloud me-2"></i>
+                    <div>
+                        <h1 class="m-1">Weather</h1>
+                        <p class="m-0">tagline goes here</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item  ">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- main -->
+    <div class="banner">
+        <div class="container mb-5">
+            <div>
+                <form class="find-location position-relative">
+                    <input type="text" placeholder="Find your location..." id="search"
+                        class="searchInput w-100 form-control rounded-pill">
+                    <input type="button" class="btn rounded-pill text-white position-absolute border-0" value="Find"
+                        id="submit1">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class=" forecast-container1 container position-relative mb-5">
+        <div class="forecast-container">
+            <div class="row gx-0 gy-3">
+                <div class="col-lg-4">
+                    <div class="todays-forecast card rounded-end-0 border-0">
+                        <div class="card-header d-flex justify-content-between border-0 text-secondary-emphasis">
+                            <div class="day">Monday</div>
+                            <div class="date">15 April</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="country my-2 fw-bold">ny</h5>
+                            <div class="d-flex align-middle align-items-center">
+                                <div class="degree text-white">23<sup>o</sup>C</div>
+                                <div class="forecast-icon"><img src="./images/moon.png" alt="" width="90" height="90"
+                                        class="d-block"></div>
+                            </div>
+                            <div class="custom mb-3 text-info">Clear</div>
+                            <span class="me-3">
+                                <img src="./images/icon-umberella.png" alt="icon-umberella">
+                                <span>20%</span>
+                            </span>
+                            <span class="me-3">
+                                <img src="./images/icon-wind.png" alt="icon-umberella">
+                                <span>18km/h</span>
+                            </span>
+                            <span>
+                                <img src="./images/icon-compass.png" alt="icon-umberella">
+                                East
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 middle">
+                    <div class="card forecast rounded-start-0 rounded-end-0 border-0">
+                        <div class="card-header text-center border-0">Tuesday</div>
+                        <div class="card-body text-center">
+                            <div class="forecast-icon mb-2">
+                                <img src="./images/cloudy sun.png" alt="sun" width="48">
+                            </div>
+                            <div class="degree text-white fs-2 fw-bold">23<sup>o</sup>C</div>
+                            <small class="fs-6">18.5<sup>o</sup></small>
+                            <div class="custom text-info ">Partly Cloudy</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card forecast rounded-start-0 border-0">
+                        <div class="card-header text-center border-0">Tuesday</div>
+                        <div class="card-body text-center">
+                            <div class="forecast-icon mb-2">
+                                <img src="./images/sun.png" alt="sun" width="48">
+                            </div>
+                            <div class="degree text-white fs-2 fw-bold">35<sup>o</sup>C</div>
+                            <small class="fs-6">23.5<sup>o</sup></small>
+                            <div class="custom text-info ">sunny</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div>
+                        <form class="supscription position-relative mb-4">
+                            <input type="email" placeholder="Enter your email to subscribe...." id="email1"
+                                class="email-supscription w-100 form-control rounded-pill">
+                            <input type="button" class="btn rounded-pill text-white position-absolute border-0"
+                                value="subscribe" id="submit2">
+                        </form>
+                        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 ms-auto">
+                    <div class="social-links d-flex gap-1 ms-auto">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- -------------  JS ------------------  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
