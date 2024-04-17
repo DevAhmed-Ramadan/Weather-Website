@@ -45,7 +45,7 @@ navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
 async function apiData(croods) {
     try {
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c360d874cf574689a4c32418241604&q=${croods}&days=3`);
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c360d874cf574689a4c32418241604&q=${croods}&days=3`);
         let data = await response.json();
         displayCard(data)
     }
